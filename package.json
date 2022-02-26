@@ -1,6 +1,6 @@
 {
   "name": "ts-paths-sample",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
@@ -10,6 +10,8 @@
     "@types/node": "^16.7.13",
     "@types/react": "^17.0.20",
     "@types/react-dom": "^17.0.9",
+    "craco": "^0.0.3",
+    "craco-plugin-ts-paths": "^0.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "5.0.0",
@@ -17,10 +19,10 @@
     "web-vitals": "^2.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "craco start --config craco.config.js",
+    "build": "craco build --config craco.config.js",
+    "test": "craco test --config craco-config.js",
+    "eject": "craco eject --config craco-config.js"
   },
   "eslintConfig": {
     "extends": [
@@ -39,5 +41,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/craco__craco": "^6.4.0",
+    "@types/react-dev-utils": "^9.0.10"
   }
 }
